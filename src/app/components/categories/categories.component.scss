@@ -1,0 +1,45 @@
+@import "../../variables/variables.scss";
+
+.container{
+    padding: 10px 220px 20px 220px;
+    .header{
+        display: flex;
+        .category-icon{
+            background: url(../../../assets/img/categories.svg);
+            width: 17px;
+            height: 16px;
+        }
+        span{
+            margin-left: 5px;
+            color: $customBlue;
+            font: normal normal normal 24px/13px Source Sans Pro;
+            letter-spacing: 0px;
+        }
+    }
+    .category-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            div{
+                width: 165px;
+                height: 50px;
+                border-radius: 10px;
+                opacity: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font: normal normal 600 18px/13px Source Sans Pro;   
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+        }
+        .category-button{
+            border: 1px solid $borderGrey;
+            color: $textGrey;
+        }
+        .selected-category{
+            background:$customBlue 0% 0% no-repeat padding-box;
+            color: $textWhite;
+        }
+    }
+}

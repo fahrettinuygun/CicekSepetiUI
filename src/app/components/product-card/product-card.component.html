@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="product-image" [ngStyle]="{'background-image':'url('+product.img+')'}"></div>
+    <span class="product-name">{{product.name}}</span>
+    <div class="free-cargo" [ngStyle]="product.freeCargo?{'display':'inline'}:{'display':'none'}">
+        <span>Ücretsiz Teslimat</span>
+    </div>
+    <div class="product-price">
+        <span class="price">{{product.price}}</span>
+        <span class="currency">{{product.currency}}</span>
+    </div>
+    <div class="basket-button">
+        <div [ngStyle]="addedCount == 0?{'display':'none'}:{'display':'inline'}" class="minus-button" (click)="removeToBasket()"></div>
+        <div [ngStyle]="addedCount == 0?{'display':'inline'}:{'display':'none'}" class="add-to-basket" (click)="addToBasket()">Sepete Ekle</div>
+        <div [ngStyle]="addedCount == 0?{'display':'none'}:{'display':'inline'}" class="count">{{addedCount}}</div>
+        <div [ngStyle]="addedCount == 0?{'display':'none'}:{'display':'inline'}" class="plus-button" (click)="addToBasket()"></div>
+    </div>
+</div>

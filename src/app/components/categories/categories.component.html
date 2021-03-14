@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="header">
+        <div class="category-icon"></div>
+        <span>Kategoriler</span>
+    </div>
+    <div class="category-buttons">
+        <div *ngFor="let category of categories">
+            <div (click)="changeCategory(category)" [ngClass]="selectedCategory == category.id?'selected-category': 'category-button'">{{category.name}}</div>
+        </div>
+    </div>
+</div>

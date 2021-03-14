@@ -1,0 +1,43 @@
+@import "../../variables/variables.scss";
+
+.container{
+    background: 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 5px;
+    .campaign-image{
+        width: 167px;
+        height: 133px;
+        background: transparent 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+        background-position: center;
+        background-size: cover;
+    }
+    .campaign-right{
+        padding-left: 10px;
+        .campaign-title{
+            text-align: left;
+            font: normal normal 300 24px/30px Source Sans Pro;
+            letter-spacing: 0px;
+            color:$textGrey;
+            opacity: 1;
+        }
+        .campaign-button{
+
+            width: 104px;
+            height: 30px;
+            background: $white 0% 0% no-repeat padding-box;
+            border-radius: 15px;
+            opacity: 1;
+            text-align: center;
+            font: normal normal 600 13px/30px Source Sans Pro;
+            letter-spacing: 0px;
+            color: $campaignText;
+        }
+    }
+}

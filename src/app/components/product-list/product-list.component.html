@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="category">
+        <div class="category-icon"></div>
+        <span class="category-name">{{selectedCategory.name}}</span>
+    </div>
+    <div class="list">
+        <div *ngIf="notFound">
+            <span class="notFound">Aradığınız ürünü bulamadık...</span>
+        </div>
+        <div class="list-item" *ngFor="let product of filteredProductList">
+            <app-product-card [product]="product"></app-product-card>
+        </div>
+    </div>
+</div>

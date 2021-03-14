@@ -1,0 +1,13 @@
+<div class="container">
+    <button class="basket-button">
+        <span *ngIf="basketCount > 0" class="basket-count">{{basketCount}}</span>
+        <div class="basket-icon">
+            <img class="basket-img" src="../../../assets/img/basket.svg">
+        </div>
+        <span class="basket-name">Sepetim</span>
+    </button>
+    <div *ngIf="basketTotalPrice > 0" class="freeCargo">
+        <span *ngIf="freeCargo">Ücretsiz Kargo</span>
+        <span *ngIf="!freeCargo" class="price">{{ 500-basketTotalPrice | number : '1.2-2'}}TL </span><span *ngIf="!freeCargo"> ürün daha ekleyin kargo bedava</span>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+@import "../../variables/variables.scss";
+
+.container{
+    width: 872px;
+    height: 50px;
+    background: $customGrey 0% 0% no-repeat padding-box;
+    border: 2px solid $borderLightGrey;
+    border-radius: 28px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    .search-icon{
+        width: 18px;
+        height: 20px;
+        background: transparent url('../../../assets/img/search.svg') 0% 0% no-repeat padding-box;
+        opacity: 1;
+        flex-basis: 50px;
+        background-position: center;
+    }
+    .search-input{
+        width: inherit;
+        input{
+            min-width: -webkit-fill-available;
+            border: none;
+            background-color: $customGrey;
+            color: $textDarkGrey;
+            font: normal normal normal 15px/19px Source Sans Pro;
+        }
+        input:focus {outline:none!important;}
+    }
+    .search-button{
+        flex-basis: 85px;
+        button{
+            width: 66px;
+            height: 40px;
+            background: $customGreen 0% 0% no-repeat padding-box;
+            border: 2px solid $borderLightGrey;
+            border-radius: 28px;
+            color: $textWhite;
+            font: normal normal normal 18px/22px Source Sans Pro;
+        }
+    }
+}

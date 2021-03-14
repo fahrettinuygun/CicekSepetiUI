@@ -1,0 +1,13 @@
+@import "../../variables/variables.scss";
+
+.container{
+    padding: 0px 220px 0px 220px;
+    .pages{
+        color: $textDarkGrey;
+        font: normal normal normal 13px/30px Source Sans Pro;
+    }
+    .last-page{
+        color: $customGreen;
+        font: normal normal normal 13px/30px Source Sans Pro;
+    }
+}

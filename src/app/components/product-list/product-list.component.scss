@@ -1,0 +1,33 @@
+@import "../../variables/variables.scss";
+
+.container{
+    padding: 0px 220px 0px 220px;
+    .category{
+        display: flex;
+        align-items: center;
+        .category-icon{
+            background: url(../../../assets/img/category.svg);
+            width: 22px;
+            height: 17px;
+        }
+        span{
+            text-align: left;
+            font: normal normal 300 20px/30px Source Sans Pro;
+            letter-spacing: 0px;
+            color:$textGrey;
+        }
+    }
+    .list{
+        display: flex;
+        flex-flow: wrap;
+        .list-item{
+            flex-basis: 25%;
+        }
+    }
+    .notFound{
+        text-align: left;
+        font: normal normal 300 20px/30px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #707070;
+    }
+}

@@ -1,0 +1,7 @@
+<div class="container" [ngStyle]="{'background-color':campaign.campaignColor}">
+    <div class="campaign-image" [ngStyle]="{'background-image':'url('+campaign.img+')'}"></div>
+    <div class="campaign-right">
+        <span class="campaign-title">{{campaign.title}}</span>
+        <div class="campaign-button" (click)="goToCampaign()">{{campaign.buttonName}}</div>
+    </div>
+</div>

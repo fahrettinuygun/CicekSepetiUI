@@ -1,0 +1,84 @@
+@import "../../variables/variables.scss";
+
+.container{
+    width: 272px;
+    height: 400px;
+    background: $textWhite 0% 0% no-repeat padding-box;
+    border: 1px solid $borderGrey;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    .product-image{
+        width: 242px;
+        height: 244px;
+        background: transparent 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+    .product-name{
+        text-align: left;
+        font: normal normal 600 15px/17px Source Sans Pro;
+        letter-spacing: 0px;
+        color: $textDarkGrey;
+        opacity: 1;
+    }
+    .free-cargo{
+        text-align: left;
+        font: normal normal 600 15px/13px Source Sans Pro;
+        letter-spacing: 0px;
+        color: $customGreen;
+        opacity: 1;
+    }
+    .product-price{
+        text-align: left;
+        font: normal normal 600 16px/13px Source Sans Pro;
+        letter-spacing: 0px;
+        color: $textBlack;
+        opacity: 1;
+        .price{
+
+        }
+        .currency{
+
+        }
+    }
+    .basket-button{
+        width: 242px;
+        height: 40px;
+        border: 1px solid $customBlue;
+        border-radius: 22px;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .plus-button{
+            background: url(../../../assets/img/plus.svg);
+            width: 30px;
+            height: 30px;
+        }
+        .add-to-basket{
+            text-align: right;
+            font: normal normal 600 15px/15px Source Sans Pro;
+            letter-spacing: 0px;
+            color: $customBlue;
+            opacity: 1;
+        }
+        .count{
+            text-align: center;
+            font: normal normal bold 22px/13px Source Sans Pro;
+            letter-spacing: 0px;
+            color: $textDarkGrey;
+            opacity: 1;
+        }
+        .minus-button{
+            background: url(../../../assets/img/plus.svg);
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import "../../variables/variables.scss";
+
+.container{
+    .basket-button{
+        top: 20px;
+        left: 1558px;
+        width: 142px;
+        height: 50px;
+        background: $customBlue 0% 0% no-repeat padding-box;
+        border: 0px;
+        border-radius: 28px;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .basket-count{
+            color:$textWhite;
+            background-color: $customRed;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -45px;
+            margin-left: 120px;
+            font: normal normal medium 16px/19px Rubik;
+        }
+        .basket-icon{
+            top: 35px;
+            left: 1583px;
+            width: 23px;
+            height: 23px;
+        }
+        .basket-name{
+            color: $textWhite;
+            font: normal normal 600 16px/20px Source Sans Pro;
+        }
+    }
+    .freeCargo{
+        width: 343px;
+        height: 69px;
+        background: #F54257 0% 0% no-repeat padding-box;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        position: absolute;
+        margin-left: -150px;
+        span{
+            text-align: left;
+            font: normal normal 600 15px/11px Source Sans Pro;
+            letter-spacing: 0px;
+            opacity: 1;
+            color: white;
+        }
+        .price{
+            color:#FFCE00
+        }
+    }
+}
